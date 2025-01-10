@@ -1,0 +1,165 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    margin: 20px;
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+/* Task Form */
+.task-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #154117;
+}
+
+/* Calendar */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fefefe; /* A vibrant green color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+.calendar-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(231, 231, 231, 0.1);
+    margin-bottom: 20px;
+}
+
+.calendar-header {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.calendar div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.scheduled, .completed, .pending {
+    width: 95%; /* Increase the width of tasks to almost fill the container */
+    margin: 0 auto; /* Center the task within the calendar cell */
+    padding: 10px; /* Add spacing inside the task box */
+    border-radius: 5px; /* Round the corners for a modern look */
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+    text-align: center; /* Center the text inside the box */
+    font-size: 14px; /* Adjust font size for better readability */
+    color: #000000;
+}
+
+Individual task styles
+.scheduled {
+    background-color: #0082ae; /* Light Blue */
+    color: #000000;
+}
+
+.completed {
+    background-color: #b8dd13; /* Light Green */
+    color: #000000;
+}
+
+.pending {
+    background-color: #ff5500; /* Bright Yellow */
+    color: #000000;
+}
+
+
+/* Task List */
+.task-list-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #000000;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #e02403; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Increased padding for a larger button */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size for better readability */
+    width: 8px; /* Let the button size adjust dynamically */
+    height: auto; /* Adjust height dynamically */
+    min-width: 80px; /* Set a minimum width for uniformity */
+}
+
+
+li button:hover {
+    background-color: #691c01;
+}

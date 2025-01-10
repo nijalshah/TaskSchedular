@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalTask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CalTask</h1>
+    </header>
+
+    <main>
+        <!-- Add New Task Section -->
+        <section class="task-form-container">
+            <h2>Add New Task Here</h2>
+            <form id="task-form">
+                <label for="task-title">Task Title:</label>
+                <input type="text" id="task-title" placeholder="Enter task title" required>
+
+                <label for="task-date">Task Date:</label>
+                <input type="date" id="task-date" required>
+
+                <label for="task-completed">Task Status:</label>
+                <select id="task-completed">
+                    <option value="true">Scheduled</option>
+                    <option value="false">Not Scheduled</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Calendar Section -->
+         <h1>Task Calender</h1>
+        <section class="calendar-container">
+            <h2 id="month-name"></h2>
+            <div class="calendar-header">
+                <button id="prev-month">&lt; Prev</button>
+                <button id="next-month">Next &gt;</button>
+            </div>
+            <div class="calendar" id="calendar"></div>
+        </section>
+
+        <!-- Completed Tasks Section -->
+        <section class="task-list-container">
+            <h2>Task Summary</h2>
+            <ul id="completed-tasks"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Task Scheduler</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
