@@ -62,4 +62,4 @@ Future improvements could involve adding user authentication for personalized ta
 ### Output
 
 ![ss1](https://github.com/user-attachments/assets/f393b385-fd2b-476a-bff4-8f00b9e82383)
-![ss2](https://github.com/user-attachments/assets/1f6d5694-9f19-4a88-91b3-4a08027bc77f)
+![ss22](https://github.com/user-attachments/assets/7fff2f5f-cccc-40fb-a091-cc59682cd21c)
